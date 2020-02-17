@@ -1,0 +1,17 @@
+.printme {
+	display: none;
+}
+@media print {
+	.no-printme  {
+		display: none;
+	}
+	.printme  {
+        display: block;
+        background-color: aqua;
+	}
+}
+
+
+.ancho-impresion{
+    width: 88mm;
+}

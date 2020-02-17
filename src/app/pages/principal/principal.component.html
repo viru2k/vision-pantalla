@@ -1,0 +1,86 @@
+<div class="background-principal alto-antalla ">
+    <div class="row mr-4   " *ngIf="!llamando" >
+       
+  
+
+
+    <div class="col-8 backg">
+            <div class="row-center mt-5 mb-5">  <h1 class="border-text border-text-titulo text-center">ATENDIENDO</h1></div>
+            <hr class="m-4 mr-4">
+            <div class="row m-4 mr-4 ">
+                <div class="col-3">
+                    <h1 class="text-color-blue texto-fuente border-text">MEDICO</h1>
+                </div>
+                <div class="col-4">
+                    <h1 class="text-color-blue texto-fuente border-text">PACIENTE</h1>
+                </div>
+                <div class="col-5">
+                    <h1 class="text-color-blue texto-fuente border-text">CONSULTORIO</h1>
+                </div>
+            
+            </div>
+           
+                <div class="row m-4 mr-4 border" *ngFor="let elemento of elementosAtendidos">
+                
+                    <div class="col-5 ">
+                        <h1 class="border-text-datos">{{elemento.nombreyapellido}} </h1>
+                    </div>
+                    <div class="col-5">
+                        <h1 class="border-text-datos">{{elemento.paciente_apellido}} {{elemento.paciente_nombre}}</h1>
+                    </div>
+                    <div class="col-2">
+                        <h1 class="text-color-blue texto-fuente border-text-puesto mt-4 mb-4">{{elemento.puesto_llamado}}</h1>
+                    </div>
+                    
+                </div>
+                
+        
+        </div>
+
+        <div class="col-4 backg">
+            <div class="row-center mt-5 mb-5">  <h1 class=" border-text border-text-titulo">RECEPCION</h1></div>
+        <hr class="m-4 mr-4">
+        <div class="row m-4 mr-4 ">
+            <div class="col-12">
+                <h1 class="text-color-blue texto-fuente border-text">PACIENTE</h1>
+            </div>
+           
+         
+        
+        </div>
+            <div class="row m-4 mr-4 border" *ngFor="let elemento of elementos">
+            
+                <div class="col-12">
+                    <h1 class="border-text-datos">{{elemento.paciente_apellido}} {{elemento.paciente_nombre}}</h1>
+                </div>
+              
+            </div>
+
+    </div>
+
+    </div>
+
+
+
+<div class="row mr-4  padding-llamando-paciente" *ngIf="llamando" >
+<div class="col-1"></div>
+    <div class="col-10  border-llamando ">  
+
+            <div class="padding-llamando-elemento">
+                <h1 class="text-color-blue  border-text-h1 mt-2">PACIENTE </h1>
+            </div>  
+            <div class=" padding-llamando-paciente">
+                <h1 class="text-color-blue  border-text-h1 mt-2">{{elementoLlamando.paciente_nombre}}</h1>
+            </div>
+            <div class="padding-llamando-elemento">
+                    <h1 class="text-color-blue  border-text-h1 mt-2">PUESTO</h1>
+                </div>
+            <div class=" padding-llamando-paciente">
+                <h1 class="text-color-blue  border-text-h1 mt-2">{{elementoLlamando.puesto}}</h1>
+            </div>
+    </div>
+    <div class="col-1"></div>
+    
+</div>
+
+</div>
