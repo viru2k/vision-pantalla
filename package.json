@@ -33,7 +33,7 @@
     "fullcalendar": "^4.0.0-alpha",
     "hammerjs": "~2.0.8",
     "hover.css": "^2.3.2",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "ngx-electron": "^2.1.1",
     "ngx-socket-io": "^2.1.1",
     "primeng": "^7.0.4",
