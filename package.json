@@ -30,7 +30,7 @@
     "core-js": "^2.5.4",
     "electron-print": "^1.0.2",
     "font-awesome": "~4.7.x",
-    "fullcalendar": "^4.0.0-alpha",
+    "fullcalendar": "^6.0.2",
     "hammerjs": "~2.0.8",
     "hover.css": "^2.3.2",
     "jspdf": "^1.5.3",
